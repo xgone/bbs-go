@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: 123456
       MYSQL_ROOT_PASSWORD: 123456
     volumes:
-      - .docker-compose/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d # 初始化脚本件目录, 这个目录中的.sh/sql文件会以字母顺序依次执行
+      #- .docker-compose/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d # 初始化脚本件目录, 这个目录中的.sh/sql文件会以字母顺序依次执行
       # - ./mysql:/var/lib/mysql # 挂载数据件目录.如果非root账号执行，挂载目录必须是登录账号下目录
       # - .docker-compose/mysql/conf.d:/etc/mysql/conf.d # 挂在配置文件目录s
     restart: always
